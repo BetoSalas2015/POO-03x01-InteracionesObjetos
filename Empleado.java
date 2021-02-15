@@ -28,5 +28,38 @@ public class Empleado
         ingreso = new Date(año, mes, dia);
         salario = sal; 
     }
+    
+    public String getNombre() 
+    {
+        return new String(nombre);
+    }
+    
+    public String getApellido()
+    {
+        return new String(apellido);
+    }
+    
+    public int getNumeroEmpleado() 
+    {
+        return numeroEmpleado;
+    }
+    
+    public Date getIngreso() 
+    {
+        return ingreso;
+    }
+    
+    public void setSalario(double sal)
+    {
+        salario = (sal >= 0) ? sal : 0;
+    }
+    
+    public double getSalario()
+    {
+        return salario;
+    }
 
 }
+
+
+
