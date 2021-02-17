@@ -15,4 +15,6 @@ comment6.params=sal
 comment6.target=void\ setSalario(double)
 comment7.params=
 comment7.target=double\ getSalario()
-numComments=8
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

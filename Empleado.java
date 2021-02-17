@@ -59,7 +59,16 @@ public class Empleado
         return salario;
     }
 
+    public String toString()
+    {
+        return "Empleado: " + nombre + " " + apellido + ", Fecha Ingreso: " + ingreso.toString() + 
+               ", Numero: " + Integer.toString(numeroEmpleado) + ", Salario: " + Double.toString(salario);
+    }
 }
+
+
+
+
 
 
 
