@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-import java.util.Date;
+
 
 public class Empleado
 {
@@ -13,21 +13,21 @@ public class Empleado
     private String nombre;
     private String apellido;
     private int numeroEmpleado;
-    private Date ingreso; 
+    private Fecha ingreso; 
     private double salario;
     private static int contadorEmpleados = 100;
     
     /**
      * Constructor for objects of class Empleado
      */
-    public Empleado(String nom, String ap, double sal, int dia, int mes, int año)
+    public Empleado(String nombre, String apellido, double salario, int dia, int mes, int año)
     {
         // initialise instance variables
-        nombre = new String(nom);
-        apellido = new String(ap);
+        this.nombre = new String(nombre);
+        this.apellido = new String(apellido);
         numeroEmpleado = contadorEmpleados++;
-        ingreso = new Date(año, mes, dia);
-        salario = sal; 
+        ingreso = new Fecha(dia, mes, año);
+        this.salario = salario; 
     }
     
     public String getNombre() 
@@ -45,7 +45,7 @@ public class Empleado
         return numeroEmpleado;
     }
     
-    public Date getIngreso() 
+    public Fecha getIngreso() 
     {
         return ingreso;
     }
